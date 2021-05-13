@@ -33,5 +33,5 @@ class Voto(BaseModel):
     eleitor = ForeignKeyField(Eleitor, backref='eleitor')
 
 
-# db.connect()
-# db.create_tables([Candidato, Eleitor, Partido, Voto, UrnaEletronica])
+db.connect()
+db.create_tables([Candidato, Eleitor, Partido, Voto])

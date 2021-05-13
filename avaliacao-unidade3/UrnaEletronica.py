@@ -5,10 +5,6 @@ from peewee import *
 
 class UrnaEletronica:
 
-    def __init__(self):
-        db.connect()
-        db.create_tables([Candidato, Eleitor, Partido, Voto])
-
     def inicializar(self):
         partido1 = Partido.create(numero=51, nome="psd")
         partido2 = Partido.create(numero=15, nome="mdb")
